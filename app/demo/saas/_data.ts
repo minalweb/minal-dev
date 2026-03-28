@@ -19,7 +19,13 @@ export const saasActivity = [
   { title: "Quarterly report exported", time: "2 days ago" },
 ];
 
-export const saasInvoices = [
+export type SaaSInvoice = {
+  client: string;
+  amount: string;
+  status: "Paid" | "Pending";
+};
+
+export const saasInvoices: SaaSInvoice[] = [
   { client: "Venture Labs", amount: "$4,500", status: "Paid" },
   { client: "Orbit Systems", amount: "$2,100", status: "Pending" },
   { client: "Atlas Studio", amount: "$3,650", status: "Paid" },
