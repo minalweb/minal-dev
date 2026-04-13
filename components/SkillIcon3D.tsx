@@ -75,7 +75,7 @@ function IconMesh({ type }: { type: SkillType }) {
     }
   });
 
-  let geometryNode: JSX.Element;
+  let geometryNode: React.ReactElement;
   switch (geometry) {
     case "sphere":
       geometryNode = <sphereGeometry args={[0.55, 32, 32]} />;
