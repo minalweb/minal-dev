@@ -3,6 +3,7 @@
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Float } from "@react-three/drei";
 import { Suspense, useMemo, useRef } from "react";
+import type { ReactElement } from "react";
 import * as THREE from "three";
 
 type SkillType =
@@ -75,7 +76,7 @@ function IconMesh({ type }: { type: SkillType }) {
     }
   });
 
-  let geometryNode: React.ReactElement;
+  let geometryNode: ReactElement;
   switch (geometry) {
     case "sphere":
       geometryNode = <sphereGeometry args={[0.55, 32, 32]} />;
