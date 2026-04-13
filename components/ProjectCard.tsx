@@ -16,10 +16,14 @@ type Props = {
 
 export default function ProjectCard({ project }: Props) {
   return (
-    <div className="glass-card hover-lift tilt-card flex h-full flex-col overflow-hidden">
-      <div className="relative">
-        <img src={project.image} alt={project.title} className="h-48 w-full object-cover" />
-        <span className="absolute left-4 top-4 rounded-full bg-base-950/80 px-3 py-1 text-xs text-white/70">
+    <div className="glass-card hover-lift tilt-card group flex h-full flex-col overflow-hidden">
+      <div className="relative overflow-hidden">
+        <img
+          src={project.image}
+          alt={project.title}
+          className="h-48 w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+        />
+        <span className="absolute left-4 top-4 rounded-full border border-black/10 bg-white/85 px-3 py-1 text-xs text-black/70">
           {project.category}
         </span>
       </div>

@@ -5,11 +5,10 @@ const badges = ["Fast Delivery", "Clean Code", "Scalable Systems"];
 
 export default function Hero() {
   return (
-    <section className="section-padding relative overflow-hidden bg-hero-gradient">
-      <div className="absolute inset-0 bg-radial-faint opacity-70" />
+    <section className="section-padding relative overflow-hidden hero-light">
       <div className="relative mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
         <div className="space-y-6 reveal">
-          <p className="badge">Available for Fiverr projects</p>
+          <p className="pill">Available for Fiverr projects</p>
           <h1 className="text-4xl font-semibold leading-tight md:text-6xl">
             I build <span className="gradient-text">conversion-first</span> web experiences that turn clicks into paid clients.
           </h1>
@@ -26,14 +25,14 @@ export default function Hero() {
           </div>
           <div className="flex flex-wrap gap-3">
             {badges.map((badge) => (
-              <span key={badge} className="badge">
+              <span key={badge} className="pill">
                 {badge}
               </span>
             ))}
           </div>
         </div>
-        <div className="glass-strong p-6 shadow-glow animate-float">
-          <div className="rounded-2xl border border-white/10 bg-base-900 p-6">
+        <div className="card-elevated p-6 animate-float">
+          <div className="rounded-2xl border border-black/10 bg-white p-6">
             <p className="text-sm text-white/70">Live delivery snapshot</p>
             <h3 className="mt-3 text-2xl font-semibold">7-day launch plan</h3>
             <ul className="mt-6 space-y-3 text-sm text-white/70">
@@ -43,7 +42,7 @@ export default function Hero() {
               <li>Day 7: Handoff + launch support</li>
             </ul>
           </div>
-          <div className="mt-6 rounded-2xl border border-white/10 bg-base-900 p-6">
+          <div className="mt-6 rounded-2xl border border-black/10 bg-white p-6">
             <p className="text-xs uppercase tracking-[0.2em] text-white/50">Trusted by global teams</p>
             <div className="mt-4 flex flex-wrap gap-4 text-sm text-white/70">
               <span>Startup founders</span>

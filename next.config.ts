@@ -2,6 +2,9 @@
 
 const nextConfig: NextConfig = {
   transpilePackages: ["recharts"],
+  turbopack: {
+    root: __dirname,
+  },
 };
 
 export default nextConfig;

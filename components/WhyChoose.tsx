@@ -18,7 +18,7 @@ export default function WhyChoose() {
           {reasons.map((reason, index) => (
             <div
               key={reason.title}
-              className="glass-card hover-lift p-6 stagger-item"
+              className="card-elevated hover-lift p-6 stagger-item"
               style={{ "--stagger": index + 1 } as CSSProperties}
             >
               <h3 className="text-lg font-semibold">{reason.title}</h3>

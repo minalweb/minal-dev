@@ -10,17 +10,17 @@ const navItems = [
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-white/5 bg-base-950/80 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-black/10 bg-white/80 backdrop-blur">
       <div className="flex items-center justify-between px-6 py-4 md:px-12 lg:px-20">
         <Link href="/" className="text-lg font-semibold tracking-wide">
           <span className="gradient-text">{siteConfig.name}</span>
         </Link>
-        <nav className="hidden items-center gap-8 text-sm text-white/80 md:flex">
+        <nav className="hidden items-center gap-8 text-sm text-black/70 md:flex">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="group relative transition hover:text-white"
+              className="group relative transition hover:text-black"
             >
               {item.label}
               <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-gradient-to-r from-accent-400 to-accent-600 transition-all duration-300 group-hover:w-full" />

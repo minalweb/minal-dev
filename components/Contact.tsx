@@ -18,7 +18,7 @@ export default function Contact() {
         <div className="grid gap-5 md:grid-cols-3">
           <a
             href={siteConfig.whatsappUrl}
-            className="glass-card hover-lift p-6 stagger-item"
+            className="card-elevated hover-lift p-6 stagger-item"
             style={{ "--stagger": 1 } as CSSProperties}
             target="_blank"
           >
@@ -28,7 +28,7 @@ export default function Contact() {
           </a>
           <Link
             href={siteConfig.fiverrUrl}
-            className="glass-card hover-lift p-6 stagger-item"
+            className="card-elevated hover-lift p-6 stagger-item"
             style={{ "--stagger": 2 } as CSSProperties}
             target="_blank"
           >
@@ -38,7 +38,7 @@ export default function Contact() {
           </Link>
           <a
             href={`mailto:${siteConfig.email}`}
-            className="glass-card hover-lift p-6 stagger-item"
+            className="card-elevated hover-lift p-6 stagger-item"
             style={{ "--stagger": 3 } as CSSProperties}
           >
             <p className="text-sm text-white/60">Email</p>
