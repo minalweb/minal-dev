@@ -1,9 +1,9 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import About from "@/components/About";
 import CTA from "@/components/CTA";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
+import PremiumHero from "@/components/PremiumHero";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import Services from "@/components/Services";
@@ -21,7 +21,7 @@ export default function Home() {
     <div className="min-h-screen bg-base-950">
       <Navbar />
       <main>
-        <Hero />
+        <PremiumHero />
         <Trust />
         <Projects />
         <Services />
