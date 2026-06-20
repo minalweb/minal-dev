@@ -33,10 +33,20 @@ export default function ProjectCard({ project }: Props) {
           <p className="mt-2 text-sm text-white/70">{project.description}</p>
         </div>
         <div className="mt-auto flex flex-wrap gap-3">
-          <Link href={project.liveUrl} className="primary-button text-xs" prefetch={false}>
+          <Link
+            href={project.liveUrl}
+            className="primary-button text-xs"
+            prefetch={false}
+            aria-label={`View live demo of ${project.title}`}
+          >
             Live Demo
           </Link>
-          <Link href={project.detailUrl} className="secondary-button text-xs" prefetch={false}>
+          <Link
+            href={project.detailUrl}
+            className="secondary-button text-xs"
+            prefetch={false}
+            aria-label={`View details of ${project.title}`}
+          >
             View Details
           </Link>
         </div>
