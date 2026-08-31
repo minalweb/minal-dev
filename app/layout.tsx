@@ -1,5 +1,6 @@
 ﻿import type { Metadata } from "next";
 import { Manrope, Space_Grotesk } from "next/font/google";
+import BackToTop from "@/components/BackToTop";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang="en" className={`${manrope.variable} ${spaceGrotesk.variable}`}>
       <body className="bg-base-950 text-white">
         {children}
+        <BackToTop />
       </body>
     </html>
   );
